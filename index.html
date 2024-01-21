@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="Reliable, Secure, Privacy, Fast">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://intercial.github.io">
+
+    <title>Home</title>
+    <meta name="description" content="Reliable, Secure, Privacy, Fast">
+
+    <script async>
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var cookiesArray = document.cookie.split(';');
+        for (var i = 0; i < cookiesArray.length; i++) {
+          var cookie = cookiesArray[i];
+          while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1, cookie.length);
+          }
+          if (cookie.indexOf(nameEQ) === 0) {
+            return cookie.substring(nameEQ.length, cookie.length);
+          }
+        }
+        return null;
+      }
+
+      if(getCookie('INTERCIAL_TOKEN') == null) {
+        location.pathname = '/hello.html'
+      }
+    </script>
+  </head>
+  <body>
+    Yoo!!
+  </body>
+</html>
